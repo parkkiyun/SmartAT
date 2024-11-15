@@ -17,7 +17,7 @@ TEMPLATE_FILES = {
 }
 
 # 로고 파일 경로
-LOGO_PATH = '/Users/kiyun/Documents/SMARTAT/images/logo.png'
+LOGO_PATH = os.path.join(os.path.dirname(__file__), "images", "logo.png")
 
 # 로컬 이미지 파일을 Base64로 변환하는 함수
 def get_base64_image(image_path):
