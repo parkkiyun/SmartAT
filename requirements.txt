@@ -1,4 +1,6 @@
 streamlit
 pandas
-jinja2
-pdfkit
+python-docx
+openpyxl
+tempfile
+base64
