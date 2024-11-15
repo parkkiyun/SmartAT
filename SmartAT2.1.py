@@ -8,12 +8,13 @@ import tempfile
 import base64
 from openpyxl import load_workbook
 
-# 템플릿 파일 경로 설정
-TEMPLATE_DIR = '/Users/kiyun/Documents/SMARTAT/templates'
+# 템플릿 파일 경로 설정 (절대 경로)
+TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), "templates")
+
 TEMPLATE_FILES = {
-    "출석인정결석": "출석인정 결석계 템플릿.docx",
-    "질병결석": "질병결석계 템플릿.docx",
-    "기타결석": "기타결석계 템플릿.docx"
+    "출석인정결석": os.path.join(TEMPLATE_DIR, "출석인정 결석계 템플릿.docx"),
+    "질병결석": os.path.join(TEMPLATE_DIR, "질병결석계 템플릿.docx"),
+    "기타결석": os.path.join(TEMPLATE_DIR, "기타결석계 템플릿.docx"),
 }
 
 # 로고 파일 경로
